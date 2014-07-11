@@ -1,0 +1,15 @@
+startup_message off
+vbell on
+defscrollback 10000
+hardcopy_append on
+pow_detach_msg "Screen session of \$LOGNAME \$:cr\$:nl:ended."
+silencewait 15
+defutf8 on
+msgwait 1
+nonblock on
+
+# map C-a to `
+escape ``
+
+# bind delete key to backspace
+bindkey -k kD stuff \010

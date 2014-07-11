@@ -1,0 +1,7 @@
+[user]
+	email = rlm@rlmiller.org
+	name = Robert Miller
+[push]
+	default = simple
+[core]
+	editor = vim
