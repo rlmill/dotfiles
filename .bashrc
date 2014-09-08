@@ -29,7 +29,12 @@ alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -lhF'
 
-alias ls='ls --color=auto'
+if [ "$(uname)" = "Darwin" ]
+then
+    alias ls='ls -GFh'
+else
+    alias ls='ls --color=auto'
+fi
 PS1='[\u@\h \W]\$ '
 alias vi=vim
 # not in a screen (i.e. logging on), go to base:
