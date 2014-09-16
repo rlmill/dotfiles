@@ -43,5 +43,11 @@ if [ -d $PSEUDO_BASE -a "$STY" = '' ]
 then
     cd $PSEUDO_BASE
 fi
+function ipn {
+  cwd=$(pwd)
+  cd /Users/rlm/Dropbox/ipython_notebooks
+  ipython notebook --pylab=inline
+  cd $cwd
+}
 
 source ~/.bash_completion
